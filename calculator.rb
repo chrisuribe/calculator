@@ -1,6 +1,6 @@
 class Calculator
     def one_calculation()
-      puts "Ruby Calculator"
+      puts "Ruby Calculator v0.1"
       puts "What would you like to do?"
       puts "1. Add"
       puts "2. Subtract"
@@ -25,8 +25,6 @@ class Calculator
         return
       end
 
-      
-
       number_1 = gets.chomp().to_f;
 
       puts "Your first number is #{number_1}."
@@ -48,15 +46,7 @@ class Calculator
         puts "invalid input. :( Try again."
       end
     end
-
-    def version1
-      is_running = true;
-
-      while is_running do 
-        menu
-      end
-    end
-  end
   
   s = Calculator.new
+
   s.one_calculation
